@@ -1,0 +1,296 @@
+$date
+   Sun Dec 21 20:12:30 2025
+$end
+
+$version
+  2025.1.0
+  $dumpfile ("wave.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_cpu $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$scope module test $end
+$var wire 1 # clk $end
+$var wire 1 $ reset $end
+$var wire 1 % Halt $end
+$var wire 1 & Halt_int $end
+$var reg 16 ' pc [15:0] $end
+$var wire 16 ( instruction [15:0] $end
+$var wire 1 ) RegDst $end
+$var wire 1 * Branch $end
+$var wire 1 + MemToReg $end
+$var wire 1 , RegWrite $end
+$var wire 1 - MemWrite $end
+$var wire 1 . MemRead $end
+$var wire 1 / ALUSrc $end
+$var wire 1 0 PCSrc $end
+$var wire 2 1 ALUOp [1:0] $end
+$var wire 3 2 read_reg1 [2:0] $end
+$var wire 3 3 read_reg2 [2:0] $end
+$var wire 3 4 write_reg [2:0] $end
+$var wire 16 5 write_data [15:0] $end
+$var wire 16 6 read_data1 [15:0] $end
+$var wire 16 7 read_data2 [15:0] $end
+$var wire 3 8 alu_ctrl [2:0] $end
+$var wire 16 9 sign_ext [15:0] $end
+$var wire 16 : alu_result [15:0] $end
+$var wire 1 ; zero $end
+$var wire 16 < mem_data [15:0] $end
+$var wire 16 = branch_addr [15:0] $end
+$var wire 16 > pc_next [15:0] $end
+$scope module IM $end
+$var wire 16 ? addr [15:0] $end
+$var wire 16 ( instr [15:0] $end
+$upscope $end
+$scope module CU $end
+$var wire 4 @ opcode [15:12] $end
+$var wire 3 A funct [2:0] $end
+$var reg 1 B RegDst $end
+$var reg 1 C RegWrite $end
+$var reg 1 D ALUSrc $end
+$var reg 1 E MemRead $end
+$var reg 1 F MemWrite $end
+$var reg 1 G MemToReg $end
+$var reg 1 H Branch $end
+$var reg 1 I Jump $end
+$var reg 1 J Halt $end
+$var reg 2 K ALUOp [1:0] $end
+$var reg 2 L BranchCond [1:0] $end
+$var reg 1 M JumpType $end
+$var reg 1 N IsShift $end
+$var reg 1 O AddrAlign $end
+$upscope $end
+$scope module RF $end
+$var wire 1 # clk $end
+$var wire 1 P reset $end
+$var wire 3 2 read_reg1 [2:0] $end
+$var wire 3 3 read_reg2 [2:0] $end
+$var reg 16 Q read_data1 [15:0] $end
+$var reg 16 R read_data2 [15:0] $end
+$var wire 1 , reg_write $end
+$var wire 3 4 write_reg [2:0] $end
+$var wire 16 5 write_data [15:0] $end
+$var integer 32 S i [31:0] $end
+$upscope $end
+$scope module ALU_CTRL $end
+$var wire 2 1 ALUOp [1:0] $end
+$var wire 3 T funct [2:0] $end
+$var wire 3 8 alu_ctrl [2:0] $end
+$upscope $end
+$scope module ALU $end
+$var wire 16 6 input1 [15:0] $end
+$var wire 16 U input2 [15:0] $end
+$var wire 3 8 alu_ctrl [2:0] $end
+$var wire 16 : result [15:0] $end
+$var wire 1 ; zero $end
+$upscope $end
+$scope module DM $end
+$var wire 1 # clk $end
+$var wire 1 - mem_write $end
+$var wire 1 . mem_read $end
+$var wire 16 : address [15:0] $end
+$var wire 16 7 write_data [15:0] $end
+$var wire 16 < read_data [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+1"
+0#
+1$
+0%
+0&
+b0 '
+b11000000010101 (
+0)
+0*
+0+
+1,
+0-
+0.
+1/
+z0
+b0 1
+b0 2
+b0 3
+b0 4
+b0 5
+b0 6
+b0 7
+b0 8
+b10101 9
+b0 :
+0;
+b0 <
+b101100 =
+b10 >
+b0 ?
+b11 @
+bz A
+0B
+1C
+1D
+0E
+0F
+0G
+0H
+0I
+0J
+b0 K
+b0 L
+0M
+0N
+0O
+zP
+b0 Q
+b0 R
+bx S
+b101 T
+b10101 U
+$end
+
+#5000
+1!
+1#
+
+#10000
+0!
+0#
+
+#15000
+1!
+1#
+
+#20000
+0!
+0"
+0#
+0$
+
+#25000
+1!
+1#
+b10 '
+b11001000100111 (
+b1 2
+bx 5
+bx 6
+b1111111111100111 9
+bx :
+bx <
+b1111111111010010 =
+b100 >
+b10 ?
+b11 @
+bx Q
+b111 T
+b1111111111100111 U
+
+#30000
+0!
+0#
+
+#35000
+1!
+1#
+b100 '
+b11010000110001 (
+b10 2
+b1111111111110001 9
+b1111111111101000 =
+b110 >
+b100 ?
+b11 @
+b1 T
+b1111111111110001 U
+
+#40000
+0!
+0#
+
+#45000
+1!
+1#
+b110 '
+b101010000010000 (
+1*
+0,
+0/
+b1 1
+b10000 9
+b101000 =
+b1000 >
+b110 ?
+b101 @
+0C
+0D
+1H
+b1 K
+b1 L
+b0 T
+b0 U
+
+#50000
+0!
+0#
+
+#55000
+1!
+1#
+b1000 '
+b111000000001110 (
+0*
+b0 1
+b0 2
+b0 5
+b0 6
+b1110 9
+b0 :
+b0 <
+b100110 =
+b1010 >
+b1000 ?
+b111 @
+0H
+1I
+b0 K
+b0 L
+b0 Q
+b110 T
+
+#60000
+0!
+0#
+
+#65000
+1!
+1#
+1%
+1&
+b1010 '
+b1111000000000000 (
+b0 9
+b1100 =
+b1100 >
+b1010 ?
+b1111 @
+0I
+1J
+b0 T
+
+#70000
+0!
+0#
+
+#75000
+1!
+1#

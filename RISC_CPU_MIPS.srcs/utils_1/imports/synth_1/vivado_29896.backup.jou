@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Dec 21 18:06:08 2025
+# Process ID         : 29896
+# Current directory  : C:/Study/RISC_CPU_MIPS/RISC_CPU_MIPS.srcs/utils_1/imports/synth_1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent1776 C:\Study\RISC_CPU_MIPS\RISC_CPU_MIPS.srcs\utils_1\imports\synth_1\CPU.dcp
+# Log file           : C:/Study/RISC_CPU_MIPS/RISC_CPU_MIPS.srcs/utils_1/imports/synth_1/vivado.log
+# Journal file       : C:/Study/RISC_CPU_MIPS/RISC_CPU_MIPS.srcs/utils_1/imports/synth_1\vivado.jou
+# Running On         : Admin-PC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 5600X 6-Core Processor             
+# CPU Frequency      : 3693 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 34238 MB
+# Swap memory        : 23622 MB
+# Total Virtual      : 57860 MB
+# Available Virtual  : 24178 MB
+#-----------------------------------------------------------
+start_gui
+open_checkpoint C:/Study/RISC_CPU_MIPS/RISC_CPU_MIPS.srcs/utils_1/imports/synth_1/CPU.dcp

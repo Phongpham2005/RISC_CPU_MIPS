@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../RISC_CPU_MIPS.srcs/sources_1/new/CPU.v" \
+"../../../../RISC_CPU_MIPS.srcs/sources_1/new/alu.v" \
+"../../../../RISC_CPU_MIPS.srcs/sources_1/new/alu_control.v" \
+"../../../../RISC_CPU_MIPS.srcs/sources_1/new/control unit.v" \
+"../../../../RISC_CPU_MIPS.srcs/sources_1/new/data_memory.v" \
+"../../../../RISC_CPU_MIPS.srcs/sources_1/new/forward module.v" \
+"../../../../RISC_CPU_MIPS.srcs/sources_1/new/intruction memory.v" \
+"../../../../RISC_CPU_MIPS.srcs/sources_1/new/module harzard.v" \
+"../../../../RISC_CPU_MIPS.srcs/sources_1/new/register aray.v" \
+"../../../../RISC_CPU_MIPS.srcs/sim_1/new/tb_RF.v" \
+"../../../../RISC_CPU_MIPS.srcs/sim_1/new/tb_cpu.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
