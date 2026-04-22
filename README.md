@@ -1,6 +1,6 @@
 # 16-bit RISC MIPS CPU Design
 
-Thiết kế và mô phỏng bộ vi xử lý RISC 16-bit theo kiến trúc MIPS rút gọn, hỗ trợ xử lý số nguyên, số thực (FP16) và các lệnh rẽ nhánh phức tạp.
+Thiết kế và mô phỏng bộ vi xử lý single CPU RISC 16-bit theo kiến trúc MIPS rút gọn, hỗ trợ xử lý số nguyên, số thực (FP16) và các lệnh rẽ nhánh phức tạp.
 
 ## 📋 Tổng quan dự án
 Dự án này triển khai một lõi CPU RISC cơ bản nhưng mạnh mẽ, được tối ưu hóa để chạy trên các dòng FPGA của Xilinx. Hệ thống bao gồm đầy đủ các khối chức năng từ ALU, Register File cho đến bộ xử lý số thực và bộ nhớ.
